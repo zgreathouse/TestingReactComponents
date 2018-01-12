@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-const CommentList = props => {
+const CommentList = (props) => {
+  //create array of <li>'s'
   const list = props.comments.map(comment => {
     return <li key={comment}>{comment}</li>
   });
